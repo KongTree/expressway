@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+        <title>Hello World</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/submain.js"></script>
+        
+     
+    </head>
+    <body>
+        <div data-role="page" id="sm">
+        	<div data-role="header">
+        		<h1>지역별 긴급 구조 기관</h1> 
+        	</div>
+        	<div data-role="content">
+        		<ul data-role="listview">
+        			<li><a href="./sub.html" class="local" value="경기도" rel="external"> 경기도   </a></li>
+        			<li><a href="./sub.html" class="local" value="서울" rel="external"> 서울 </a></li>
+        			<li><a href="./sub.html" class="local" value="충청북도" rel="external"> 충청북도 </a></li>
+        			<li><a href="./sub.html" class="local" value="충청남도" rel="external"> 충청남도 </a></li>
+        			<li><a href="./sub.html" class="local" value="전라북도" rel="external"> 전라북도  </a></li>
+        			<li><a href="./sub.html" class="local" value="전라남도" rel="external"> 전라남도 </a></li>
+        			<li><a href="./sub.html" class="local" value="경상북도" rel="external"> 경상북도  </a></li>
+        			<li><a href="./sub.html" class="local" value="경상남도" rel="external"> 경상남도 </a></li>
+        		</ul>
+        	</div>
+        </div> 
+        
+    </body>
+</html>

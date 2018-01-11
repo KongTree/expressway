@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+        <title>Hello World</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+     
+    </head>
+    <body>
+        <div data-role="page" id="main">
+   	 		<div data-role="header">
+   	 		<a href="#" data-rel="back"></a>
+   	 		<a href="#"></a>
+   	 		<h1>고속도로상황(노선)</h1>
+   	 		</div>
+   	 		
+   	 		<div data-role="content">
+   	 			<ul data-role="listview">
+   	 				<li><a href="#s" class="nsCode" value="0010" rel="external">경부선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0100" rel="external">남해선(순천부산)</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0101" rel="external">남해선(영암순천)</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0120" rel="external">88올림픽선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0121" rel="external">무안광주선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0140">고창담양선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0150">서해안선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0160">울산선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0170">평택화성선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0205">익산장수선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0207">대구포항선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0250">논산천안선,호남선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0270">순천완주선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0300"">청주상주선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0305">당진대전선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0350">중부선,통영대전선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0370">제2중부선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0400">평택제천선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0450">중부내륙선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0500">영동선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0550">중앙선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0600">서울양양</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0650">동해선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="0655">부산울산선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1000">서울외곽순환선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1001">서울외곽순환선(판교퇴계원)</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1020">남해제1지선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1040">남해제2지선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1100">제2경인선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1200">경인선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1510">서천공주선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="1710">화성오산선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="2510">호남선의지선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="3000">대전남부순환선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="4000">봉담동탄선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="4510">중부내륙지선</a></li>
+   	 				<li><a href="#s" class="nsCode" value="5510">중앙선의지선</a></li>
+   	 			</ul>
+   	 		</div>
+   	 	
+   	 	</div>
+   	 	
+   	 	<div data-role="page" id="s">
+   	 		<div data-role="header">
+   	 		<h1>정보</h1>
+   	 		
+   	 		</div>
+   	 		<div data-role="content">
+   	 		<a href="./submain.html" id="local" class="ui-btn" rel="external"> 지역별 긴급구조기관 </a>
+   	 			<div class="ui-bar ui-bar-a">
+   	 				<h2>노선사고정보</h2>
+   	 			</div>
+   	 			<div class="ui-body ui-body-a" id="accident">
+   	 			
+   	 			</div>
+   	 			
+   	 			<div class="ui-bar ui-bar-a">
+   	 			<h2>노선설해취약정보</h2>
+   	 			</div>
+   	 			<div class="ui-body ui-body-a" id="snow">
+   	 			
+   	 			</div>
+   	 			<div id="msgs"></div> 
+   	 		</div>
+   	 	</div>
+        
+        
+    </body>
+</html>
